@@ -2,7 +2,7 @@
 
 This repository contains the code and workflows used in the manuscript:
 
-> *[INSERT PAPER TITLE]*
+> *Coupled atmospheric moisture and trade networks reveal a concentration of global freshwater risk in a handful of countries* - Fahrländer et al. (in prep., Apr 2026)
 
 It implements a coupled network framework linking atmospheric moisture flows and virtual water trade to quantify transboundary water dependencies.
 
@@ -11,7 +11,7 @@ It implements a coupled network framework linking atmospheric moisture flows and
 ## Overview
 
 The workflow integrates two global systems:
-- atmospheric moisture flow networks (ERA5-based reconstructions)
+- atmospheric moisture flow networks (Reconciled dataset from De Petrillo & Fahrländer et al. 2025)
 - virtual water trade networks (CWASI database)
 
 Countries are used as the common analytical unit to assess cross-system water dependencies.
@@ -82,7 +82,7 @@ Location: `scripts/2_network_analysis/`
 - `settings.py`  
   Configuration file defining parameters and file paths.
 
-This step produces network metrics and intermediate outputs used for post-processing.
+This step produces network metrics and intermediate outputs used for post-processing. Flags to enable/disable parts of the analysis are included in `settings.py`. All filepaths, including input and output and analysis thresholds/parameters are set in the settings script (please adjust if needed). 
 
 ---
 
@@ -104,7 +104,7 @@ Location: `scripts/3_post_processing/`
   - `plot_settings.py`
   - `stats_analysis.py`
 
-Outputs are written to the `output/` directory.
+Outputs are written to the `output/` directory. `plot_all.py` executes all plotting functons. Alternatively, individual figure scripts can be executed separately. In both cases filepaths and plot settings have to be modified in `plot_settings.py`. 
 
 ---
 
@@ -114,8 +114,9 @@ output/version_YYYY-MM-DD/
 ├── figures/ # Final figures (PNG, SVG)
 └── results/ # Network metrics and analysis outputs (CSV, XLSX)
 ```
+The output folder is not included here but is generated automatically when running the code.
+Each subfolder corresponds to a fully reproducible run of the pipeline. Versioning is used to track updates in analysis and figures. The version date is set in `scripts/2_network_analysis/settings.py`.
 
-Each folder corresponds to a fully reproducible run of the pipeline. Versioning is used to track updates in analysis and figures.
 
 ---
 
@@ -138,4 +139,3 @@ python scripts/2_network_analysis/main.py
 python scripts/3_post_processing/plot_all.py
 ```
 
-Alternatively, individual figure scripts can be executed separately.

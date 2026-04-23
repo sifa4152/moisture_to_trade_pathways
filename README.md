@@ -1,4 +1,4 @@
-# Coupled Atmospheric Moisture Flows and Virtual Water Trade Networks
+# Coupled moisture-to-trade pathways analysis
 
 This repository contains the code and workflows used in the manuscript:
 

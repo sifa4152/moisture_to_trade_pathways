@@ -139,3 +139,18 @@ python scripts/2_network_analysis/main.py
 python scripts/3_post_processing/plot_all.py
 ```
 
+## Environment
+
+### Dependencies:
+dependencies:
+  - python=3.10+
+  - numpy
+  - pandas
+  - networkx
+  - geopandas
+  - matplotlib
+  - scipy
+  - seaborn
+  - plotly
+  - tqdm
+

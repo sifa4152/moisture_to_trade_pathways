@@ -1,0 +1,278 @@
+,ID,NAME,ISO3_CODE,ISO2_CODE,ISON_CODE,NUM_ID,OL_NAME,SOURCE
+0,PF,French Polynesia,PYF,PF,258,1,Polynésie Française,EUROSTAT
+1,KI,Kiribati,KIR,KI,296,2,Kiribati,EUROSTAT
+2,AE,United Arab Emirates,ARE,AE,784,3,الإمارات العربية المتحدة,EUROSTAT
+3,AD,Andorra,AND,AD,020,4,Andorra,EUROSTAT
+4,AO,Angola,AGO,AO,024,5,Angola,EUROSTAT
+5,AQ,Antarctica,ATA,AQ,010,6,Antarctica,EUROSTAT
+6,AR,Argentina,ARG,AR,032,7,Argentina,EUROSTAT
+7,AF,Afghanistan,AFG,AF,004,8,افغانستان-افغانستان,EUROSTAT
+8,AG,Antigua and Barbuda,ATG,AG,028,9,Antigua and Barbuda,EUROSTAT
+9,AI,Anguilla,AIA,AI,660,10,Anguilla,EUROSTAT
+10,AL,Albania,ALB,AL,008,11,Shqipëria,EUROSTAT
+11,AM,Armenia,ARM,AM,051,12,Հայաստան,EUROSTAT
+12,AS,American Samoa,ASM,AS,016,13,American Samoa-Sāmoa Amelika,EUROSTAT
+13,AT,Austria,AUT,AT,040,14,Österreich,EUROSTAT
+14,AU,Australia,AUS,AU,036,15,Australia,EUROSTAT
+15,AZ,Azerbaijan,AZE,AZ,031,16,Azərbaycan,EUROSTAT
+16,AW,Aruba,ABW,AW,533,17,Aruba-Aruba,EUROSTAT
+17,BA,Bosnia and Herzegovina,BIH,BA,070,18,Bosna I Hercegovina-Bosna I Hercegovina-Босна И Херцеговина,EUROSTAT
+18,BE,Belgium,BEL,BE,056,19,Belgien-Belgique-België,EUROSTAT
+19,BB,Barbados,BRB,BB,052,20,Barbados,EUROSTAT
+20,BD,Bangladesh,BGD,BD,050,21,People’S Republic of Bangladesh,EUROSTAT
+21,BF,Burkina Faso,BFA,BF,854,22,Burkina Faso,EUROSTAT
+22,BM,Bermuda,BMU,BM,060,23,Bermuda,EUROSTAT
+23,BN,Brunei,BRN,BN,096,24,Brunei,EUROSTAT
+24,BG,Bulgaria,BGR,BG,100,25,България,EUROSTAT
+25,BH,Bahrain,BHR,BH,048,26,مملكة البحرين,EUROSTAT
+26,BI,Burundi,BDI,BI,108,27,Burundi-Burundi,EUROSTAT
+27,BJ,Benin,BEN,BJ,204,28,Bénin,EUROSTAT
+28,BL,Saint Barthélemy,BLM,BL,652,29,Saint-Barthélemy,EUROSTAT
+29,BO,Bolivia,BOL,BO,068,30,Wuliwya-Volívia-Bulivya-Bolivia,EUROSTAT
+30,BR,Brazil,BRA,BR,076,31,Brasil,EUROSTAT
+31,BS,Bahamas,BHS,BS,044,32,Bahamas,EUROSTAT
+32,BW,Botswana,BWA,BW,072,33,Botswana-Botswana,EUROSTAT
+33,BY,Belarus,BLR,BY,112,34,Беларусь,EUROSTAT
+34,BZ,Belize,BLZ,BZ,084,35,Belize,EUROSTAT
+35,CA,Canada,CAN,CA,124,36,Canada-Canada,EUROSTAT
+36,BT,Bhutan,BTN,BT,064,37,Kingdom of Bhutan,EUROSTAT
+37,BV,Bouvet Island,BVT,BV,074,38,Bouvetøya,EUROSTAT
+38,CC,Cocos (Keeling) Islands,CCK,CC,166,39,Cocos Keeling Islands,EUROSTAT
+39,CF,Central African Republic,CAF,CF,140,40,République Centrafricaine-Ködörösêse Tî Bêafrîka,EUROSTAT
+40,CG,Congo,COG,CG,178,41,Congo-Kongo-Kongó,EUROSTAT
+41,CH,Switzerland,CHE,CH,756,42,Schweiz-Suisse-Svizzera-Svizra,EUROSTAT
+42,CI,Côte D’Ivoire,CIV,CI,384,43,Côte D’Ivoire,EUROSTAT
+43,CK,Cook Islands,COK,CK,184,44,Cook Islands-Kūki 'Āirani,EUROSTAT
+44,CL,Chile,CHL,CL,152,45,Chile,EUROSTAT
+45,CD,Democratic Republic of The Congo,COD,CD,180,46,République Démocratique du Congo-Kongo-Kongó-Kongu-Kongo,EUROSTAT
+46,CP,Clipperton Island,CPT,,,47,Île Clipperton,EUROSTAT
+47,CR,Costa Rica,CRI,CR,188,48,Costa Rica,EUROSTAT
+48,CO,Colombia,COL,CO,170,49,Colombia,EUROSTAT
+49,CM,Cameroon,CMR,CM,120,50,Cameroon-Cameroun,EUROSTAT
+50,CN,China,CHN,CN,156,256,中國,EUROSTAT
+51,DK,Denmark,DNK,DK,208,51,Danmark,EUROSTAT
+52,DM,Dominica,DMA,DM,212,52,Dominica-Dominique,EUROSTAT
+53,ER,Eritrea,ERI,ER,232,53,إريتريا-Eritrea-ኤርትራ,EUROSTAT
+54,ES,Spain,ESP,ES,724,54,España,EUROSTAT
+55,DO,Dominican Republic,DOM,DO,214,55,República Dominicana,EUROSTAT
+56,DZ,Algeria,DZA,DZ,012,56,الجزائر,EUROSTAT
+57,EC,Ecuador,ECU,EC,218,57,Ikwadur-Ecuador,EUROSTAT
+58,DJ,Djibouti,DJI,DJ,262,58,جيبوتي-Djibouti-Jabuuti,EUROSTAT
+59,EE,Estonia,EST,EE,233,59,Eesti,EUROSTAT
+60,CU,Cuba,CUB,CU,192,60,Cuba,EUROSTAT
+61,EG,Egypt,EGY,EG,818,61,مصر,EUROSTAT
+62,EL,Greece,GRC,GR,300,62,Ελλάδα,EUROSTAT
+63,CV,Cape Verde,CPV,CV,132,63,Cabo Verde,EUROSTAT
+64,EH,Western Sahara,ESH,EH,732,64,الصحراء الغربية,EUROSTAT
+65,CX,Christmas Island,CXR,CX,162,65,Christmas Island,EUROSTAT
+66,CY,Cyprus,CYP,CY,196,66,Κύπρος-Kıbrıs,EUROSTAT
+67,CZ,Czechia,CZE,CZ,203,67,Česká Republika,EUROSTAT
+68,DE,Germany,DEU,DE,276,68,Deutschland,EUROSTAT
+69,GD,Grenada,GRD,GD,308,69,Grenada,EUROSTAT
+70,GE,Georgia,GEO,GE,268,70,საქართველო,EUROSTAT
+71,GG,Guernsey,GGY,GG,831,71,Guernsey-Guernesey,EUROSTAT
+72,GH,Ghana,GHA,GH,288,72,Ghana,EUROSTAT
+73,GI,Gibraltar,GIB,GI,292,73,Gibraltar,EUROSTAT
+74,FM,Micronesia,FSM,FM,583,74,Micronesia,EUROSTAT
+75,FO,Faroes,FRO,FO,234,75,Færøerne-Føroyar,EUROSTAT
+76,FR,France,FRA,FR,250,76,France,EUROSTAT
+77,GA,Gabon,GAB,GA,266,77,Gabon,EUROSTAT
+78,ET,Ethiopia,ETH,ET,231,78,Federal Democratic Republic of Ethiopia,EUROSTAT
+79,FI,Finland,FIN,FI,246,79,Suomi-Finland,EUROSTAT
+80,FJ,Fiji,FJI,FJ,242,80,Fiji-Viti-फ़िजी,EUROSTAT
+81,FK,Falkland Islands,FLK,FK,238,81,Falkland Islands,EUROSTAT
+82,GY,Guyana,GUY,GY,328,82,Guyana,EUROSTAT
+83,HK,Hong Kong,HKG,HK,344,83,香港,EUROSTAT
+84,HM,Heard Island and Mcdonald Islands,HMD,HM,334,84,Heard Island and Mcdonald Islands,EUROSTAT
+85,HN,Honduras,HND,HN,340,85,Honduras,EUROSTAT
+86,HR,Croatia,HRV,HR,191,86,Hrvatska,EUROSTAT
+87,GL,Greenland,GRL,GL,304,87,Grønland-Kalaallit Nunaat,EUROSTAT
+88,GM,Gambia,GMB,GM,270,88,Gambia,EUROSTAT
+89,GN,Guinea,GIN,GN,324,89,Guinée,EUROSTAT
+90,GQ,Equatorial Guinea,GNQ,GQ,226,90,Guinée Équatoriale-Guinea Ecuatorial,EUROSTAT
+91,GS,South Georgia and The South Sandwich Islands,SGS,GS,239,91,South Georgia and The South Sandwich Islands,EUROSTAT
+92,GT,Guatemala,GTM,GT,320,92,Guatemala,EUROSTAT
+93,GU,Guam,GUM,GU,316,93,Guåhan-Guam,EUROSTAT
+94,HT,Haiti,HTI,HT,332,94,Haïti-Ayiti,EUROSTAT
+95,GW,Guinea-Bissau,GNB,GW,624,95,Guiné-Bissau,EUROSTAT
+96,HU,Hungary,HUN,HU,348,96,Magyarország,EUROSTAT
+97,ID,Indonesia,IDN,ID,360,97,Indonesia,EUROSTAT
+98,IE,Ireland,IRL,IE,372,98,Ireland-Éire,EUROSTAT
+99,IN,India,IND,IN,356,99,India-भारत,EUROSTAT
+100,IL,Israel,ISR,IL,376,100,إسرائيل-ישראל,EUROSTAT
+101,IM,Isle of Man,IMN,IM,833,101,Isle of Man-Ellan Vannin,EUROSTAT
+102,IO,British Indian Ocean Territory,IOT,IO,086,102,British Indian Ocean Territory,EUROSTAT
+103,IQ,Iraq,IRQ,IQ,368,103,العراق-Îraq,EUROSTAT
+104,IR,Iran,IRN,IR,364,104,ایران,EUROSTAT
+105,IS,Iceland,ISL,IS,352,105,Ísland,EUROSTAT
+106,IT,Italy,ITA,IT,380,106,Italia,EUROSTAT
+107,LA,Laos,LAO,LA,418,107,ປະເທດລາວ,EUROSTAT
+108,LB,Lebanon,LBN,LB,422,108,لبنان,EUROSTAT
+109,LC,Saint Lucia,LCA,LC,662,109,Saint Lucia,EUROSTAT
+110,LI,Liechtenstein,LIE,LI,438,110,Liechtenstein,EUROSTAT
+111,LK,Sri Lanka,LKA,LK,144,111,ශ්‍රී ලංකාව-இலங்கை,EUROSTAT
+112,JP,Japan,JPN,JP,392,112,日本,EUROSTAT
+113,LR,Liberia,LBR,LR,430,113,Liberia,EUROSTAT
+114,JE,Jersey,JEY,JE,832,114,Jersey-Jersey,EUROSTAT
+115,LS,Lesotho,LSO,LS,426,115,Lesotho-Lesotho,EUROSTAT
+116,LT,Lithuania,LTU,LT,440,116,Lietuva,EUROSTAT
+117,JM,Jamaica,JAM,JM,388,117,Jamaica,EUROSTAT
+118,JO,Jordan,JOR,JO,400,118,الأردن,EUROSTAT
+119,KE,Kenya,KEN,KE,404,119,Kenya-Kenya,EUROSTAT
+120,LU,Luxembourg,LUX,LU,442,120,Luxemburg-Luxembourg-Lëtzebuerg,EUROSTAT
+121,LV,Latvia,LVA,LV,428,121,Latvija,EUROSTAT
+122,KG,Kyrgyzstan,KGZ,KG,417,122,Kırgızstan-Кыргызстан,EUROSTAT
+123,KW,Kuwait,KWT,KW,414,123,الكويت,EUROSTAT
+124,KY,Cayman Islands,CYM,KY,136,124,Cayman Islands,EUROSTAT
+125,KH,Cambodia,KHM,KH,116,125,កម្ពុជា,EUROSTAT
+126,LY,Libya,LBY,LY,434,126,دولة ليبيا,EUROSTAT
+127,KM,Comoros,COM,KM,174,127,جزر القمر-Comores-Komori,EUROSTAT
+128,KN,Saint Kitts and Nevis,KNA,KN,659,128,Saint Kitts and Nevis,EUROSTAT
+129,KZ,Kazakhstan,KAZ,KZ,398,129,Қазақстан,EUROSTAT
+130,KP,North Korea,PRK,KP,408,130,조선민주주의인민공화국,EUROSTAT
+131,KR,South Korea,KOR,KR,410,131,대한민국,EUROSTAT
+132,MV,Maldives,MDV,MV,462,132,Republic of Maldives,EUROSTAT
+133,MW,Malawi,MWI,MW,454,133,Malawi-Malaŵi,EUROSTAT
+134,MX,Mexico,MEX,MX,484,134,México,EUROSTAT
+135,MY,Malaysia,MYS,MY,458,135,Malaysia,EUROSTAT
+136,MH,Marshall Islands,MHL,MH,584,136,Marshall Islands-Aorōkin M̧Ajeļ,EUROSTAT
+137,MK,North Macedonia,MKD,MK,807,137,Северна Македонија,EUROSTAT
+138,MN,Mongolia,MNG,MN,496,138,Монгол Улс,EUROSTAT
+139,MO,Macau,MAC,MO,446,139,澳門-Macau,EUROSTAT
+140,MC,Monaco,MCO,MC,492,140,Monaco,EUROSTAT
+141,MP,Northern Mariana Islands,MNP,MP,580,141,Northern Mariana Islands-Notte Mariånas-Northern Mariana Islands,EUROSTAT
+142,MR,Mauritania,MRT,MR,478,142,موريتانيا,EUROSTAT
+143,MS,Montserrat,MSR,MS,500,143,Montserrat,EUROSTAT
+144,ML,Mali,MLI,ML,466,144,Mali,EUROSTAT
+145,MM,Myanmar/Burma,MMR,MM,104,145,Myanma,EUROSTAT
+146,MD,Moldova,MDA,MD,498,146,Moldova,EUROSTAT
+147,MT,Malta,MLT,MT,470,147,Malta-Malta,EUROSTAT
+148,MU,Mauritius,MUS,MU,480,148,Mauritius,EUROSTAT
+149,ME,Montenegro,MNE,ME,499,149,Црна Гора,EUROSTAT
+150,MG,Madagascar,MDG,MG,450,150,Madagascar-Madagasikara,EUROSTAT
+151,NC,New Caledonia,NCL,NC,540,151,Nouvelle-Calédonie,EUROSTAT
+152,NE,Niger,NER,NE,562,152,Niger,EUROSTAT
+153,NF,Norfolk Island,NFK,NF,574,153,Norfolk Island-Norfuk Ailen,EUROSTAT
+154,NG,Nigeria,NGA,NG,566,154,Nigeria,EUROSTAT
+155,NI,Nicaragua,NIC,NI,558,155,Nicaragua,EUROSTAT
+156,MA,Morocco,MAR,MA,504,156,المغرب,EUROSTAT
+157,NL,Netherlands,NLD,NL,528,157,Nederland,EUROSTAT
+158,NO,Norway,NOR,NO,578,158,Norga-Noreg-Norge,EUROSTAT
+159,MZ,Mozambique,MOZ,MZ,508,159,Moçambique,EUROSTAT
+160,NA,Namibia,NAM,NA,516,160,Namibia,EUROSTAT
+161,PA,Panama,PAN,PA,591,161,Panamá,EUROSTAT
+162,NP,Nepal,NPL,NP,524,162,नेपाल,EUROSTAT
+163,NR,Nauru,NRU,NR,520,163,Nauru-Naoero,EUROSTAT
+164,NU,Niue,NIU,NU,570,164,Niue-Niuē,EUROSTAT
+165,PE,Peru,PER,PE,604,165,Piruw-Piruw-Perú,EUROSTAT
+166,PG,Papua New Guinea,PNG,PG,598,166,Papua New Guinea-Papua Niu Gini-Papua Niugini,EUROSTAT
+167,PH,Philippines,PHL,PH,608,167,Philippines-Pilipinas,EUROSTAT
+168,PK,Pakistan,PAK,PK,586,168,Pakistan-پاكستان,EUROSTAT
+169,NZ,New Zealand,NZL,NZ,554,169,New Zealand-Aotearoa,EUROSTAT
+170,OM,Oman,OMN,OM,512,170,سلطنة عمان,EUROSTAT
+171,RO,Romania,ROU,RO,642,171,România,EUROSTAT
+172,PM,Saint Pierre and Miquelon,SPM,PM,666,172,Saint-Pierre-Et-Miquelon,EUROSTAT
+173,PN,Pitcairn Islands,PCN,PN,612,173,Pitcairn Islands-Pitkern Ailen,EUROSTAT
+174,RS,Serbia,SRB,RS,688,174,Србија,EUROSTAT
+175,RU,Russian Federation,RUS,RU,643,175,Россия,EUROSTAT
+176,PL,Poland,POL,PL,616,176,Polska,EUROSTAT
+177,PR,Puerto Rico,PRI,PR,630,177,Puerto Rico,EUROSTAT
+178,PS,Palestine,PSE,PS,275,178,فلسطين,EUROSTAT
+179,PT,Portugal,PRT,PT,620,179,Portugal,EUROSTAT
+180,PW,Palau,PLW,PW,585,180,Palau-Belau,EUROSTAT
+181,PY,Paraguay,PRY,PY,600,181,Paraguay-Paraguái,EUROSTAT
+182,QA,Qatar,QAT,QA,634,182,قطر,EUROSTAT
+183,SA,Saudi Arabia,SAU,SA,682,183,السعودية,EUROSTAT
+184,SB,Solomon Islands,SLB,SB,090,184,Solomon Islands,EUROSTAT
+185,SC,Seychelles,SYC,SC,690,185,Sesel-Seychelles-Seychelles,EUROSTAT
+186,RW,Rwanda,RWA,RW,646,186,Rwanda-Rwanda-Rwanda,EUROSTAT
+187,SD,Sudan,SDN,SD,729,187,السودان-Sudan,EUROSTAT
+188,SE,Sweden,SWE,SE,752,188,Sverige,EUROSTAT
+189,SO,Somalia,SOM,SO,706,189,الصومال-Soomaaliya,EUROSTAT
+190,SR,Suriname,SUR,SR,740,190,Suriname,EUROSTAT
+191,TT,Trinidad and Tobago,TTO,TT,780,191,Trinidad and Tobago,EUROSTAT
+192,TV,Tuvalu,TUV,TV,798,192,Tuvalu-Tuvalu,EUROSTAT
+193,SI,Slovenia,SVN,SI,705,193,Slovinsko,EUROSTAT
+194,SJ,Svalbard and Jan Mayen,SJM,SJ,744,194,Svalbard Og Jan Mayen,EUROSTAT
+195,SS,South Sudan,SSD,SS,728,195,South Sudan,EUROSTAT
+196,ST,São Tomé and Príncipe,STP,ST,678,196,São Tomé E Príncipe,EUROSTAT
+197,TJ,Tajikistan,TJK,TJ,762,197,Тоҷикистон,EUROSTAT
+198,SV,El Salvador,SLV,SV,222,198,El Salvador,EUROSTAT
+199,SY,Syria,SYR,SY,760,199,سوريا,EUROSTAT
+200,TK,Tokelau,TKL,TK,772,200,Tokelau-Tokelau,EUROSTAT
+201,TL,Timor-Leste,TLS,TL,626,201,Timor-Leste-Timor Lorosae,EUROSTAT
+202,SZ,Eswatini,SWZ,SZ,748,202,Kingdom of Eswatini,EUROSTAT
+203,TC,Turks and Caicos Islands,TCA,TC,796,203,Turks and Caicos Islands,EUROSTAT
+204,TZ,United Republic of Tanzania,TZA,TZ,834,204,Tanzania,EUROSTAT
+205,UA,Ukraine,UKR,UA,804,205,Україна,EUROSTAT
+206,TD,Chad,TCD,TD,148,206,تشاد-Tchad,EUROSTAT
+207,TM,Turkmenistan,TKM,TM,795,207,Türkmenistan,EUROSTAT
+208,SL,Sierra Leone,SLE,SL,694,208,Sierra Leone,EUROSTAT
+209,SM,San Marino,SMR,SM,674,209,San Marino,EUROSTAT
+210,TN,Tunisia,TUN,TN,788,210,تونس,EUROSTAT
+211,SK,Slovakia,SVK,SK,703,211,Slovensko,EUROSTAT
+212,TF,French Southern and Antarctic Lands,ATF,TF,260,212,Terres Australes Et Antarctiques Françaises,EUROSTAT
+213,TG,Togo,TGO,TG,768,213,Togo,EUROSTAT
+214,TH,Thailand,THA,TH,764,214,ประเทศไทย,EUROSTAT
+215,TO,Tonga,TON,TO,776,215,Tonga-Tonga,EUROSTAT
+216,TR,Türkiye,TUR,TR,792,216,Türkiye,EUROSTAT
+217,SN,Senegal,SEN,SN,686,217,Sénégal,EUROSTAT
+218,SG,Singapore,SGP,SG,702,218,新加坡-Singapore-Singapura-சிங்கப்பூர்,EUROSTAT
+219,SH,"Saint Helena, Ascension and Tristan Da Cunha",SHN,SH,654,219,"Saint Helena, Ascension and Tristan Da Cunha",EUROSTAT
+220,UM,United States Minor Outlying Islands,UMI,UM,581,220,United States Minor Outlying Islands,EUROSTAT
+221,UG,Uganda,UGA,UG,800,221,Uganda-Uganda,EUROSTAT
+222,UK,United Kingdom,GBR,GB,826,222,United Kingdom,EUROSTAT
+223,VG,British Virgin Islands,VGB,VG,092,223,British Virgin Islands,EUROSTAT
+224,VI,Us Virgin Islands,VIR,VI,850,224,Us Virgin Islands,EUROSTAT
+225,YE,Yemen,YEM,YE,887,225,اليمن,EUROSTAT
+226,ZA,South Africa,ZAF,ZA,710,226,Suid-Afrika-South Africa-Sewula Afrika-Afrika-Borwa-Afrika-Borwa-Ningizimu Afrika-Aforika Borwa-Afrika Dzonga-Afurika Tshipembe-Mzantsi Afrika-Ningizimu Afrika,EUROSTAT
+227,VN,Viet nam,VNM,VN,704,227,Việt Nam,EUROSTAT
+228,ZM,Zambia,ZMB,ZM,894,228,Zambia,EUROSTAT
+229,US,United States,USA,US,840,258,United States,EUROSTAT
+230,ZW,Zimbabwe,ZWE,ZW,716,229,Zimbabwe,EUROSTAT
+231,BQ,"Bonaire, Sint Eustatius and Saba",BES,BQ,535,230,"Bonaire, Sint Eustatius and Saba",EUROSTAT
+232,CW,Curaçao,CUW,CW,531,231,Curaçao,EUROSTAT
+233,SX,Sint-Maarten,SXM,SX,534,232,Sint-Maarten,EUROSTAT
+234,UY,Uruguay,URY,UY,858,233,Uruguay,EUROSTAT
+235,VU,Vanuatu,VUT,VU,548,234,Vanuatu-Vanuatu-Vanuatu,EUROSTAT
+236,WF,Wallis and Futuna,WLF,WF,876,235,Wallis-Et-Futuna,EUROSTAT
+237,WS,Samoa,WSM,WS,882,236,Samoa-Sāmoa,EUROSTAT
+238,XA,Paracel Islands,XA,,,237,Paracel Islands (Disputed Territory),EUROSTAT
+239,XB,Spratly Islands,XB,,,238,Spratly Islands (Disputed Territory),EUROSTAT
+240,XC,Aksai Chin,XC,,,239,Aksai Chin (Disputed Territory),EUROSTAT
+241,XE,China/India,XE,,,240,China/India (Disputed Territory),EUROSTAT
+242,XF,Hala'Ib Triangle,XF,,,241,Hala'Ib Triangle (Disputed Territory),EUROSTAT
+243,XD,Arunachal Pradesh,XD,,,242,Arunashal Pradesh (Disputed Territory),EUROSTAT
+244,XG,Ilemi Triangle,XG,,,243,Ilemi Triangle (Disputed Territory),EUROSTAT
+245,XL,Navassa Island,XL,,,244,Navassa Island (Disputed Territory),EUROSTAT
+246,XM,Scarborough Reef,XM,,,245,Scarborough Reef (Disputed Territory),EUROSTAT
+247,XN,Senkaku Islands,XN,,,246,Senkaku Islands (Disputed Territory),EUROSTAT
+248,UZ,Uzbekistan,UZB,UZ,860,247,Узбекистан,EUROSTAT
+249,VA,Vatican City,VAT,VA,336,248,Stato Della Città Del Vaticano-Status Civitatis Vaticanae,EUROSTAT
+250,VC,Saint Vincent and The Grenadines,VCT,VC,670,249,Saint Vincent and The Grenadines,EUROSTAT
+251,XH,Jammu Kashmir,XH,,,250,Jammu Kashmir (Disputed Territory),EUROSTAT
+252,XI,Kuril Islands,XI,,,251,Kuril Islands (Disputed Territory),EUROSTAT
+253,XO,Bassas Da India,XO,,,252,"Fr Territory (Juan de Nova, Glorioso, Europa, Tromelin, Bassas Da India)",EUROSTAT
+254,XU,Abyei,XU,,,253,Abyei Region (Disputed Territory),EUROSTAT
+255,XV,Bir Tawil (Disputed Territory),XV,,,254,Bir Tawil (Disputed Territory),EUROSTAT
+256,VE,Venezuela,VEN,VE,862,255,Venezuela,EUROSTAT
+257,AK,Alaska (US),USA,US,840,259,Alaska,EUROSTAT
+258,HI,Hawaii (US),USA,US,840,260,Hawaiʻi,EUROSTAT
+259,TW,Taiwan,TWN,TW,158,257,中華民國,EUROSTAT
+260,GF,French Guiana,GUF,GF,254,272,Guyane,EUROSTAT
+261,GP,Guadeloupe,GLP,GP,312,273,Guadeloupe,EUROSTAT
+262,MQ,Martinique,MTQ,MQ,474,274,Martinique,EUROSTAT
+263,MF,Saint Martin,MAF,MF,663,276,Saint Martin,EUROSTAT
+264,YT,Mayotte,MYT,YT,175,275,Mayotte,EUROSTAT
+265,RE,Réunion,REU,RE,638,277,Réunion,EUROSTAT
+266,OC_SO,Southern Ocean,,,,261,Southern Ocean,GOAS v1
+267,OC_SAO,South Atlantic Ocean,,,,262,South Atlantic Ocean,GOAS v1
+268,OC_SPO,South Pacific Ocean,,,,263,South Pacific Ocean,GOAS v1
+269,OC_NPO,North Pacific Ocean,,,,264,North Pacific Ocean,GOAS v1
+270,OC_SCS,South China and Easter Archipelagic Seas,,,,265,South China and Easter Archipelagic Seas,GOAS v1
+271,OC_IO,Indian Ocean,,,,266,Indian Ocean,GOAS v1
+272,OC_MR,Mediterranean Region,,,,267,Mediterranean Region,GOAS v1
+273,OC_BS,Baltic Sea,,,,268,Baltic Sea,GOAS v1
+274,OC_NAO,North Atlantic Ocean,,,,269,North Atlantic Ocean,GOAS v1
+275,OC_AO,Arctic Ocean,,,,270,Arctic Ocean,GOAS v1
+276,OC_CS,Caspian Sea,,,,271,Caspian Sea,SeaVox v19

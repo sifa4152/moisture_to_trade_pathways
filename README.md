@@ -142,7 +142,6 @@ python scripts/3_post_processing/plot_all.py
 ## Environment
 
 ### Dependencies:
-dependencies:
   - python=3.10+
   - numpy
   - pandas

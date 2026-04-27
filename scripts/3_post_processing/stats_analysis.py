@@ -87,66 +87,156 @@ def exposure_stats():
 # -------------------------------------------------------------------------
 # Sensitivity Analysis Plotting
 # -------------------------------------------------------------------------
-def plot_sensitivity(sensitivity_csv=None, save=ps.FIGS_DIR):
-    """Read sensitivity_analysis.csv and plot threshold sensitivity."""
+# def plot_sensitivity(sensitivity_csv=None, save=ps.FIGS_DIR):
+#     """Read sensitivity_analysis.csv and plot threshold sensitivity."""
+#     import pandas as pd
+#     import matplotlib.pyplot as plt
+    
+#     df = pd.read_csv(sensitivity_csv or ps.RESULTS_DIR / "sensitivity_analysis.csv",
+#                      index_col="threshold")
+
+#     # Setting a clean style
+#     plt.rcParams.update({'font.family': 'sans-serif', 'font.size': 10})
+#     fig, axes = plt.subplots(1, 3, figsize=(16, 6), facecolor="white", constrained_layout=True)
+    
+#     # Define a consistent color palette
+#     colors = {"atmos": "#0E3350", "vwt": "#4b0607", "triples": "#444343", "baseline": "#7d15a7"}
+
+#     # --- Panel 1: Structural (Dual Axis) ---
+#     ax1 = axes[0]
+#     ln1 = ax1.plot(df.index, df["n_edges_atmos"], "o-", color=colors["atmos"], label="Atmospheric edges", markersize=5, linewidth=1.5)
+#     ln2 = ax1.plot(df.index, df["n_edges_vwt"],   "s-", color=colors["vwt"],   label="VWT edges",   markersize=5, linewidth=1.5)
+    
+#     ax1_twin = ax1.twinx()
+#     ln3 = ax1_twin.plot(df.index, df["n_triples"], "^--", color=colors["triples"], label="Triples", alpha=0.7)
+    
+#     # Unified Legend for twin axes
+#     lns = ln1 + ln2 + ln3
+#     labs = [l.get_label() for l in lns]
+#     ax1.legend(lns, labs, loc="upper right", frameon=False, fontsize=9)
+    
+#     # Aesthetic tweaks for P1
+#     ax1.set_title("(a) Graph connectivity", loc='left', fontweight='bold', pad=10)
+#     ax1.set_xlabel("Threshold percentile")
+#     ax1.set_ylabel("Edge count")
+#     ax1_twin.set_ylabel("Triple count", color=colors["triples"])
+#     ax1_twin.tick_params(axis='y', labelcolor=colors["triples"])
+#     ax1.grid(axis='y', linestyle='--', alpha=0.4)
+#     ax1.spines['top'].set_visible(False)
+#     # threshold_values = df.index.tolist()
+#     # ax1.set_xticks(threshold_values)
+    
+#     # --- Panel 2: Dependency and Asymmetry ---
+#     ax2 = axes[1]
+#     ax2.plot(df.index, df["dep_mean"],   "o-",  color="#09491d", label="mean exposure", markersize=3)
+#     ax2.plot(df.index, df["dep_median"], "o--", color="#74a16f", label="median exposure", markersize=3)
+#     ax2.plot(df.index, df["asym_mean"],  "D-",  color="#c06e02", label="mean asymmetry", markersize=3)
+#     ax2.plot(df.index, df["asym_median"], "D--", color="#e9a113", label="median asymmetry", markersize=3)
+    
+#     # Highlight Baseline
+#     ax2.axvline(90, color=colors["baseline"], linestyle=":", linewidth=1.5, alpha=0.8)
+#     ax2.text(91, ax2.get_ylim()[0], "Baseline (90)", color=colors["baseline"], verticalalignment='bottom', fontsize=9)
+
+#     ax2.set_title("(b) Cross-network metrics", loc='left', fontweight='bold', pad=10)
+#     ax2.set_xlabel("Threshold percentile")
+#     ax2.set_ylabel("Metric value")
+#     ax2.legend(frameon=False, fontsize=9)
+#     ax2.grid(axis='y', linestyle='--', alpha=0.4)
+#     ax2.spines[['top', 'right']].set_visible(False)
+#     # ax2.set_xticks(threshold_values)
+    
+#     # Panel 3: top-5 mediator stability (as a text table)
+#     ax3 = axes[2]
+#     ax3.axis("off")
+#     tbl = ax3.table(
+#         cellText=[[str(t), m] for t, m in df["topn_mediators"].items()],
+#         colLabels=["Threshold [%]", "Top mediators"],
+#         loc="center", cellLoc="left",
+#     )
+#     tbl.auto_set_font_size(False)
+#     tbl.set_fontsize(8)
+#     ax3.set_title("(c) Mediator rank stability", loc='left', fontweight='bold', pad=10)
+    
+#     # Make header bold and color background and set column widths
+#     col_widths = [0.22, 0.78]  # adjust to taste, must sum to ~1
+#     for (row, col), cell in tbl.get_celld().items():
+#         cell.set_width(col_widths[col])
+#         if row == 0:
+#             cell.set_text_props(weight='bold', color='white')
+#             cell.set_facecolor('#404040')
+#         elif row % 2 == 0:
+#             cell.set_facecolor('#f2f2f2') # Zebra striping
+            
+#     if save:
+#         pf.save_fig(fig, "sensitivity_analysis", folder=save, dpi=450)
+#     return fig
+
+def plot_sensitivity(sensitivity_csv=None, save=ps.FIGS_DIR, save_table=True):
+    """Plot first two sensitivity panels and export mediator table as LaTeX."""
     import pandas as pd
     import matplotlib.pyplot as plt
-    
-    df = pd.read_csv(sensitivity_csv or ps.RESULTS_DIR / "sensitivity_analysis.csv",
-                     index_col="threshold")
+    from pathlib import Path
 
-    # Setting a clean style
+    df = pd.read_csv(
+        sensitivity_csv or ps.RESULTS_DIR / "sensitivity_analysis.csv",
+        index_col="threshold"
+    )
+
+    # ---- Plot setup ----
     plt.rcParams.update({'font.family': 'sans-serif', 'font.size': 10})
-    fig, axes = plt.subplots(1, 3, figsize=(16, 6), facecolor="white", constrained_layout=True)
-    
-    # Define a consistent color palette
-    colors = {"atmos": "#0E3350", "vwt": "#4b0607", "triples": "#444343", "baseline": "#7d15a7"}
+    fig1, axes = plt.subplots(1, 2, figsize=(11, 5), facecolor="white", constrained_layout=True)
 
-    # --- Panel 1: Structural (Dual Axis) ---
+    colors = {
+        "atmos": "#0E3350",
+        "vwt": "#4b0607",
+        "triples": "#444343",
+        "baseline": "#7d15a7"
+    }
+
+    # --- Panel 1 ---
     ax1 = axes[0]
-    ln1 = ax1.plot(df.index, df["n_edges_atmos"], "o-", color=colors["atmos"], label="Atmospheric edges", markersize=5, linewidth=1.5)
-    ln2 = ax1.plot(df.index, df["n_edges_vwt"],   "s-", color=colors["vwt"],   label="VWT edges",   markersize=5, linewidth=1.5)
-    
+    ln1 = ax1.plot(df.index, df["n_edges_atmos"], "o-", color=colors["atmos"], label="Atmospheric edges", markersize=5)
+    ln2 = ax1.plot(df.index, df["n_edges_vwt"],   "s-", color=colors["vwt"],   label="VWT edges", markersize=5)
+
     ax1_twin = ax1.twinx()
     ln3 = ax1_twin.plot(df.index, df["n_triples"], "^--", color=colors["triples"], label="Triples", alpha=0.7)
-    
-    # Unified Legend for twin axes
+
     lns = ln1 + ln2 + ln3
     labs = [l.get_label() for l in lns]
     ax1.legend(lns, labs, loc="upper right", frameon=False, fontsize=9)
-    
-    # Aesthetic tweaks for P1
-    ax1.set_title("(a) Graph connectivity", loc='left', fontweight='bold', pad=10)
+
+    ax1.set_title("(a) Graph connectivity", loc='left', fontweight='bold')
     ax1.set_xlabel("Threshold percentile")
     ax1.set_ylabel("Edge count")
     ax1_twin.set_ylabel("Triple count", color=colors["triples"])
     ax1_twin.tick_params(axis='y', labelcolor=colors["triples"])
     ax1.grid(axis='y', linestyle='--', alpha=0.4)
     ax1.spines['top'].set_visible(False)
-    # threshold_values = df.index.tolist()
-    # ax1.set_xticks(threshold_values)
-    
-    # --- Panel 2: Dependency and Asymmetry ---
-    ax2 = axes[1]
-    ax2.plot(df.index, df["dep_mean"],   "o-",  color="#09491d", label="mean exposure", markersize=3)
-    ax2.plot(df.index, df["dep_median"], "o--", color="#74a16f", label="median exposure", markersize=3)
-    ax2.plot(df.index, df["asym_mean"],  "D-",  color="#c06e02", label="mean asymmetry", markersize=3)
-    ax2.plot(df.index, df["asym_median"], "D--", color="#e9a113", label="median asymmetry", markersize=3)
-    
-    # Highlight Baseline
-    ax2.axvline(90, color=colors["baseline"], linestyle=":", linewidth=1.5, alpha=0.8)
-    ax2.text(91, ax2.get_ylim()[0], "Baseline (90)", color=colors["baseline"], verticalalignment='bottom', fontsize=9)
 
-    ax2.set_title("(b) Cross-network metrics", loc='left', fontweight='bold', pad=10)
+    # --- Panel 2 ---
+    ax2 = axes[1]
+    ax2.plot(df.index, df["dep_mean"],   "o-",  color="#09491d", label="Mean exposure", markersize=3)
+    ax2.plot(df.index, df["dep_median"], "o--", color="#74a16f", label="Median exposure", markersize=3)
+    ax2.plot(df.index, df["asym_mean"],  "D-",  color="#c06e02", label="Mean asymmetry", markersize=3)
+    ax2.plot(df.index, df["asym_median"], "D--", color="#e9a113", label="Median asymmetry", markersize=3)
+
+    ax2.axvline(90, color=colors["baseline"], linestyle=":", linewidth=1.5, alpha=0.8)
+    ax2.text(91, ax2.get_ylim()[0], "Baseline (90)", color=colors["baseline"],
+             verticalalignment='bottom', fontsize=9)
+
+    ax2.set_title("(b) Cross-network metrics", loc='left', fontweight='bold')
     ax2.set_xlabel("Threshold percentile")
     ax2.set_ylabel("Metric value")
     ax2.legend(frameon=False, fontsize=9)
     ax2.grid(axis='y', linestyle='--', alpha=0.4)
     ax2.spines[['top', 'right']].set_visible(False)
-    # ax2.set_xticks(threshold_values)
+
+    # ---- Save figure ----
+    if save:
+        pf.save_fig(fig1, "sensitivity_analysis", folder=save, dpi=450)
     
     # Panel 3: top-5 mediator stability (as a text table)
-    ax3 = axes[2]
+    fig2, ax3 = plt.subplots(1, 1, figsize=(5, 5), facecolor="white", constrained_layout=True)
     ax3.axis("off")
     tbl = ax3.table(
         cellText=[[str(t), m] for t, m in df["topn_mediators"].items()],
@@ -155,7 +245,6 @@ def plot_sensitivity(sensitivity_csv=None, save=ps.FIGS_DIR):
     )
     tbl.auto_set_font_size(False)
     tbl.set_fontsize(8)
-    ax3.set_title("(c) Mediator rank stability", loc='left', fontweight='bold', pad=10)
     
     # Make header bold and color background and set column widths
     col_widths = [0.22, 0.78]  # adjust to taste, must sum to ~1
@@ -166,11 +255,49 @@ def plot_sensitivity(sensitivity_csv=None, save=ps.FIGS_DIR):
             cell.set_facecolor('#404040')
         elif row % 2 == 0:
             cell.set_facecolor('#f2f2f2') # Zebra striping
-            
-    if save:
-        pf.save_fig(fig, "sensitivity_analysis", folder=save, dpi=450)
-    return fig
 
+    if save:
+        pf.save_fig(fig2, "sensitivity_mediator_table", folder=save, dpi=450)
+    
+    # ---- Create LaTeX table in custom style ----
+    latex_table = None
+    if save_table:
+        from pathlib import Path
+
+        lines = []
+        lines.append(r"\begin{table}")
+        lines.append(r"\centering")
+        lines.append(r"\caption{Supplementary Table S1: Stability of top mediating countries across threshold percentiles.}")
+        lines.append(r"\label{tab:s1_mediator_stability}")
+        lines.append(r"\begin{tabular}{l|l}")
+        lines.append(r"\hline")
+        lines.append(r"\textbf{Threshold (\%)} & \textbf{Top mediators} \\")
+        lines.append(r"\hline")
+
+        for thresh, mediators in df["topn_mediators"].items():
+            # clean + format mediator list
+            med_list = str(mediators).split(", ")
+            
+            # join with commas (no line breaks, keeps your style)
+            med_str = ", ".join(med_list)
+
+            # escape underscores if present
+            med_str = med_str.replace("_", r"\_")
+
+            lines.append(f"{thresh} & {med_str} \\\\")
+
+        lines.append(r"\hline")
+        lines.append(r"\end{tabular}")
+        lines.append(r"\end{table}")
+
+        latex_table = "\n".join(lines)
+
+        # Save file
+        table_path = Path(save or ".") / "table_s1_mediator_stability.tex"
+        with open(table_path, "w") as f:
+            f.write(latex_table)
+       
+    return fig1, fig2, latex_table
 
 
 # runner function
@@ -182,7 +309,7 @@ def run_targeted_stats():
     exposure_stats()
 
     print("\n=== SENSITIVITY ANALYSIS ===")
-    plot_sensitivity()
+    plot_sensitivity()  # Set save to None to avoid saving files during stats run
     
 
 if __name__ == "__main__":

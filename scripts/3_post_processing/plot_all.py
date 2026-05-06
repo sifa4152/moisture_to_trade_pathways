@@ -28,7 +28,7 @@ def main():
     print("=" * 55)
 
     steps = [
-        ("Fig 2  — Chord diagrams",           lambda: fig2_chord_diagrams.make_figure()),
+        ("Fig 2  — Chord diagrams",          lambda: fig2_chord_diagrams.make_figure()),
         ("Fig 3  — Asymmetry / GDP maps",     lambda: fig3_asym_gdp_maps.make_figure()),
         ("Fig 4  — Exposure / mediators",     lambda: fig4_exposure_n_mediators.make_figure()),
         ("Fig 5a — Total flow loss",          lambda: fig5a_total_flow_loss.make_figure()),

@@ -171,7 +171,7 @@ def exposure_stats():
 #         pf.save_fig(fig, "sensitivity_analysis", folder=save, dpi=450)
 #     return fig
 
-def plot_sensitivity(sensitivity_csv=None, save=ps.FIGS_DIR, save_table=True):
+def plot_sensitivity(sensitivity_csv=None, save=ps.ADD_FIGS_DIR, save_table=True):
     """Plot first two sensitivity panels and export mediator table as LaTeX."""
     import pandas as pd
     import matplotlib.pyplot as plt
@@ -220,8 +220,8 @@ def plot_sensitivity(sensitivity_csv=None, save=ps.FIGS_DIR, save_table=True):
     ax2.plot(df.index, df["asym_mean"],  "D-",  color="#c06e02", label="Mean asymmetry", markersize=3)
     ax2.plot(df.index, df["asym_median"], "D--", color="#e9a113", label="Median asymmetry", markersize=3)
 
-    ax2.axvline(90, color=colors["baseline"], linestyle=":", linewidth=1.5, alpha=0.8)
-    ax2.text(91, ax2.get_ylim()[0], "Baseline (90)", color=colors["baseline"],
+    ax2.axvline(93, color=colors["baseline"], linestyle=":", linewidth=1.5, alpha=0.8)
+    ax2.text(91, ax2.get_ylim()[1], "Baseline (93)", color=colors["baseline"],
              verticalalignment='bottom', fontsize=9)
 
     ax2.set_title("(b) Cross-network metrics", loc='left', fontweight='bold')

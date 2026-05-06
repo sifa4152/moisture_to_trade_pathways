@@ -43,6 +43,7 @@ def _latest_version(root):
 _VERSION_DIR = _latest_version(_WORKFLOW_ROOT)
 RESULTS_DIR  = _VERSION_DIR / "results"
 FIGS_DIR     = _VERSION_DIR / "figures"
+ADD_FIGS_DIR = _VERSION_DIR / "additional_figures"
 
 SANKEY_DIR   = FIGS_DIR / "sankeys"
 
@@ -77,7 +78,7 @@ FIGSIZE_SCATTER     = (11,  7)      # scatter / bubble plot
 # -----------------------------------------------------------------------------
 MAP_EXTENT      = [-150, 180, -60, 90]   # [xmin, xmax, ymin, ymax]
 MAP_EDGE_COLOR  = "#cccccc"
-MAP_BASE_COLOR  = "white"
+MAP_BASE_COLOR  = "#969696"
 MAP_EDGE_WIDTH  = 0.1
 MAP_CBAR_KWARGS = dict(orientation="horizontal", pad=0.04, shrink=0.6, aspect=35)
 
@@ -119,7 +120,7 @@ FLOW_HEX    = [
 FLOW_VMIN   = 1e7   # LogNorm lower bound
 
 # Chord diagram
-CHORD_NODE_CMAP     = "cubehelix"
+CHORD_NODE_CMAP     = "cubehelix" # for continent version (v2), cmap is defined in plotting_script
 CHORD_BG_COLOR      = "#ffffff"
 CHORD_ARC_LWIDTH    = 0.5
 CHORD_RING_WIDTH    = 0.08
@@ -131,7 +132,7 @@ CHORD_TOP_N_NODES   = 50
 CHORD_DPI           = 450
 
 # Sankey
-SANKEY_MEDIATORS    = ["ARG", "USA", "UKR", "CAN", "RUS", "MYS"]
+SANKEY_MEDIATORS    = ["ARG", "USA", "UKR", "BEL", "CIV", "CAN", "PRY", "KAZ", "RUS", "DEU","GHA","MYS"]
 SANKEY_TOP_N        = 7      # top sources / destinations shown (rest → "Others")
 SANKEY_SOURCE_COLOR = "#C37572"
 SANKEY_DEST_COLOR   = "#6D5F76"

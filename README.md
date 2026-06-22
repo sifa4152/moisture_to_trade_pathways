@@ -2,7 +2,7 @@
 
 This repository contains the code and workflows used in the manuscript:
 
-> *Coupled atmospheric moisture and trade networks reveal a concentration of global freshwater risk in a handful of countries* - Fahrländer et al. (in prep., Apr 2026)
+> *Coupled atmospheric moisture and trade networks reveal a concentration of global freshwater risk in a handful of countries* - Fahrländer et al. (in review, *Nature Water*, June 2026)
 
 It implements a coupled network framework linking atmospheric moisture flows and virtual water trade to quantify transboundary water dependencies.
 

@@ -129,7 +129,7 @@ The full pipeline can be executed sequentially:
 python scripts/1_pre_processing/preprocess_networks_v2.py
 ```
 
-### 2. Network analysis
+### 2. Network analysis (expected runtime on standard machine: ~10min) 
 ```bash
 python scripts/2_network_analysis/main.py
 ```
@@ -142,8 +142,7 @@ python scripts/3_post_processing/plot_all.py
 ## Environment
 
 This project uses a conda environment to ensure reproducibility across systems.
-We recommend using miniconda, miniforge oder mamabaforge to install the environment either manually (see packages below) or based off the `environment.yml` provided in this repository. 
-E.g. 
+We recommend using miniconda, miniforge oder mamabaforge to install the environment either manually (see packages below) or based off the `environment.yml` provided in this repository. E.g.:
 ```bash
 conda env create -f environment.yml
 ```

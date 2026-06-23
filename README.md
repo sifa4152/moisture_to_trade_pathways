@@ -141,15 +141,34 @@ python scripts/3_post_processing/plot_all.py
 
 ## Environment
 
-### Dependencies:
-  - python=3.10+
-  - numpy
-  - pandas
-  - networkx
-  - geopandas
-  - matplotlib
-  - scipy
-  - seaborn
-  - plotly
-  - tqdm
+This project uses a conda environment to ensure reproducibility across systems.
+We recommend using miniconda, miniforge oder mamabaforge to install the environment either manually (see packages below) or based off the `environment.yml` provided in this repository. 
+E.g. 
+```bash
+conda env create -f environment.yml
+```
 
+### Dependencies:
+```bash
+name: water_net_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.26
+  - pandas=2.2
+  - scipy=1.11
+  - matplotlib=3.8
+  - seaborn=0.13
+  - geopandas=0.14
+  - cartopy=0.22
+  - networkx=3.2
+  - scikit-learn=1.4
+  - statsmodels=0.14
+  - plotly=5
+  - xarray
+  - dask
+  - pip
+  - pip:
+      - upsetplot==0.9.0
+```
